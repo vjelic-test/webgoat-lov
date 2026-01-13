@@ -12,7 +12,7 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "8b1d70eb-2b69-3b1d-ab5c-a684e98e1bca",
+              "id": "af8b23d0-6f36-354b-9db2-ddd4c1913e17",
               "name": "Found Spring endpoint",
               "helpUri": "https://www.glog.ai/",
               "help": {
@@ -26,7 +26,7 @@
               }
             },
             {
-              "id": "af8b23d0-6f36-354b-9db2-ddd4c1913e17",
+              "id": "8b1d70eb-2b69-3b1d-ab5c-a684e98e1bca",
               "name": "Found Spring endpoint",
               "helpUri": "https://www.glog.ai/",
               "help": {
@@ -54,8 +54,22 @@
               }
             },
             {
+              "id": "c126b56e-f5aa-3760-8a20-b1e04a217fe9",
+              "name": "Found Spring endpoint",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "\nThis class is a Spring Controller. All methods annotated with `RequestMapping` (as well as its shortcut annotations `GetMapping`, `PostMapping`, `PutMapping`, `DeleteMapping`, and `PatchMapping`) are reachable remotely. This class should be analyzed to make sure that remotely exposed methods are safe to expose to potential attackers.\n\nPerform input validation to ensure only properly formed data is entering the workflow in an information system, preventing malformed data from persisting in the database and triggering malfunction of various downstream components. Input validation should happen as early as possible in the data flow, preferably as soon as the data is received from the external party.\n\nData from all potentially untrusted sources should be subject to input validation, including not only Internet-facing web clients but also backend feeds over extranets, from suppliers, partners, vendors or regulators, each of which may be compromised on their own and start sending malformed data.\n\n\n## Solution (Bean Validation)\n\n```java\npublic class ExampleDto implements Serializable {\n    @Pattern(regexp = \"white list regular expression\")\n    @Size(min = minimum field size, max = maximum field size)\n    private String fieldName;\n}\n```\n\n## Solution (Validation Service or Method)\n\n```java\npublic boolean validateData(string data, String whiteListRegex) {\n    Pattern p = Pattern.compile(whiteListRegex);\n    Matcher m = p.matcher(data);\n    return m.matches();\n}\n```\n\n\n\n## References\n- [OWASP: REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)\n- [OWASP: Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)\n- [OWASP: Bean Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Bean_Validation_Cheat_Sheet.html)\n\n\n"
+              },
+              "properties": {
+                "cwe": [],
+                "severity": "LOW",
+                "kind": "FAIL"
+              }
+            },
+            {
               "id": "8fac15b7-aed3-3994-8920-5fa1712e725e",
-              "name": "Potential JDBC Injection",
+              "name": "Nonconstant string passed to execute or addBatch method on an SQL statement",
               "helpUri": "https://www.glog.ai/",
               "help": {
                 "text": "",
@@ -68,25 +82,11 @@
                     "url": "https://cwe.mitre.org/data/definitions/89.html"
                   }
                 ],
-                "severity": "MEDIUM",
+                "severity": "LOW",
                 "kind": "FAIL",
                 "tags": [
                   "CWE-89"
                 ]
-              }
-            },
-            {
-              "id": "c126b56e-f5aa-3760-8a20-b1e04a217fe9",
-              "name": "Found Spring endpoint",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "\nThis class is a Spring Controller. All methods annotated with `RequestMapping` (as well as its shortcut annotations `GetMapping`, `PostMapping`, `PutMapping`, `DeleteMapping`, and `PatchMapping`) are reachable remotely. This class should be analyzed to make sure that remotely exposed methods are safe to expose to potential attackers.\n\nPerform input validation to ensure only properly formed data is entering the workflow in an information system, preventing malformed data from persisting in the database and triggering malfunction of various downstream components. Input validation should happen as early as possible in the data flow, preferably as soon as the data is received from the external party.\n\nData from all potentially untrusted sources should be subject to input validation, including not only Internet-facing web clients but also backend feeds over extranets, from suppliers, partners, vendors or regulators, each of which may be compromised on their own and start sending malformed data.\n\n\n## Solution (Bean Validation)\n\n```java\npublic class ExampleDto implements Serializable {\n    @Pattern(regexp = \"white list regular expression\")\n    @Size(min = minimum field size, max = maximum field size)\n    private String fieldName;\n}\n```\n\n## Solution (Validation Service or Method)\n\n```java\npublic boolean validateData(string data, String whiteListRegex) {\n    Pattern p = Pattern.compile(whiteListRegex);\n    Matcher m = p.matcher(data);\n    return m.matches();\n}\n```\n\n\n\n## References\n- [OWASP: REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)\n- [OWASP: Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)\n- [OWASP: Bean Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Bean_Validation_Cheat_Sheet.html)\n\n\n"
-              },
-              "properties": {
-                "cwe": [],
-                "severity": "LOW",
-                "kind": "FAIL"
               }
             },
             {
@@ -887,7 +887,7 @@
             },
             {
               "id": "1cdc422f-7569-30c2-8b45-c2990875b77e",
-              "name": "Potential JDBC Injection",
+              "name": "Nonconstant string passed to execute or addBatch method on an SQL statement",
               "helpUri": "https://www.glog.ai/",
               "help": {
                 "text": "",
@@ -1359,12 +1359,12 @@
         {
           "ruleId": "8fac15b7-aed3-3994-8920-5fa1712e725e",
           "kind": "fail",
-          "level": "note",
+          "level": "warning",
           "message": {
-            "text": "Nonconstant string passed to execute or addBatch method on an SQL statement",
+            "text": "Potential JDBC Injection",
             "id": "default",
             "arguments": [
-              "org.owasp.webgoat.container.lessons.LessonConnectionInvocationHandler.invoke(Object, Method, Object[])"
+              "java/sql/Statement.execute(Ljava/lang/String;)Z"
             ]
           },
           "locations": [
@@ -3624,10 +3624,10 @@
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Nonconstant string passed to execute or addBatch method on an SQL statement",
+            "text": "Potential JDBC Injection",
             "id": "default",
             "arguments": [
-              "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5a.injectableQuery(String)"
+              "java/sql/Statement.executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;"
             ]
           },
           "locations": [
