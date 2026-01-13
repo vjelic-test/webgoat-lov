@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  security-events: write
+  contents: write
 
 jobs:
   glog-scan:
