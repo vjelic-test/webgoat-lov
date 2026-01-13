@@ -36,6 +36,7 @@ jobs:
         uses: ./.github/glog-action
         with:
           client: 'test'
+          env: 'dev'
           upload: 'true'
           debug: 'true'
           github-token: ${{ secrets.PAT_TOKEN }}
