@@ -12,20 +12,6 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "af8b23d0-6f36-354b-9db2-ddd4c1913e17",
-              "name": "Found Spring endpoint",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "\nThis class is a Spring Controller. All methods annotated with `RequestMapping` (as well as its shortcut annotations `GetMapping`, `PostMapping`, `PutMapping`, `DeleteMapping`, and `PatchMapping`) are reachable remotely. This class should be analyzed to make sure that remotely exposed methods are safe to expose to potential attackers.\n\nPerform input validation to ensure only properly formed data is entering the workflow in an information system, preventing malformed data from persisting in the database and triggering malfunction of various downstream components. Input validation should happen as early as possible in the data flow, preferably as soon as the data is received from the external party.\n\nData from all potentially untrusted sources should be subject to input validation, including not only Internet-facing web clients but also backend feeds over extranets, from suppliers, partners, vendors or regulators, each of which may be compromised on their own and start sending malformed data.\n\n\n## Solution (Bean Validation)\n\n```java\npublic class ExampleDto implements Serializable {\n    @Pattern(regexp = \"white list regular expression\")\n    @Size(min = minimum field size, max = maximum field size)\n    private String fieldName;\n}\n```\n\n## Solution (Validation Service or Method)\n\n```java\npublic boolean validateData(string data, String whiteListRegex) {\n    Pattern p = Pattern.compile(whiteListRegex);\n    Matcher m = p.matcher(data);\n    return m.matches();\n}\n```\n\n\n\n## References\n- [OWASP: REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)\n- [OWASP: Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)\n- [OWASP: Bean Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Bean_Validation_Cheat_Sheet.html)\n\n\n"
-              },
-              "properties": {
-                "cwe": [],
-                "severity": "LOW",
-                "kind": "FAIL"
-              }
-            },
-            {
               "id": "8b1d70eb-2b69-3b1d-ab5c-a684e98e1bca",
               "name": "Found Spring endpoint",
               "helpUri": "https://www.glog.ai/",
@@ -40,7 +26,7 @@
               }
             },
             {
-              "id": "b44c9bdd-da56-35bc-ace3-24f6d50687d2",
+              "id": "af8b23d0-6f36-354b-9db2-ddd4c1913e17",
               "name": "Found Spring endpoint",
               "helpUri": "https://www.glog.ai/",
               "help": {
@@ -54,7 +40,7 @@
               }
             },
             {
-              "id": "c126b56e-f5aa-3760-8a20-b1e04a217fe9",
+              "id": "b44c9bdd-da56-35bc-ace3-24f6d50687d2",
               "name": "Found Spring endpoint",
               "helpUri": "https://www.glog.ai/",
               "help": {
@@ -87,6 +73,20 @@
                 "tags": [
                   "CWE-89"
                 ]
+              }
+            },
+            {
+              "id": "c126b56e-f5aa-3760-8a20-b1e04a217fe9",
+              "name": "Found Spring endpoint",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "\nThis class is a Spring Controller. All methods annotated with `RequestMapping` (as well as its shortcut annotations `GetMapping`, `PostMapping`, `PutMapping`, `DeleteMapping`, and `PatchMapping`) are reachable remotely. This class should be analyzed to make sure that remotely exposed methods are safe to expose to potential attackers.\n\nPerform input validation to ensure only properly formed data is entering the workflow in an information system, preventing malformed data from persisting in the database and triggering malfunction of various downstream components. Input validation should happen as early as possible in the data flow, preferably as soon as the data is received from the external party.\n\nData from all potentially untrusted sources should be subject to input validation, including not only Internet-facing web clients but also backend feeds over extranets, from suppliers, partners, vendors or regulators, each of which may be compromised on their own and start sending malformed data.\n\n\n## Solution (Bean Validation)\n\n```java\npublic class ExampleDto implements Serializable {\n    @Pattern(regexp = \"white list regular expression\")\n    @Size(min = minimum field size, max = maximum field size)\n    private String fieldName;\n}\n```\n\n## Solution (Validation Service or Method)\n\n```java\npublic boolean validateData(string data, String whiteListRegex) {\n    Pattern p = Pattern.compile(whiteListRegex);\n    Matcher m = p.matcher(data);\n    return m.matches();\n}\n```\n\n\n\n## References\n- [OWASP: REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)\n- [OWASP: Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)\n- [OWASP: Bean Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Bean_Validation_Cheat_Sheet.html)\n\n\n"
+              },
+              "properties": {
+                "cwe": [],
+                "severity": "LOW",
+                "kind": "FAIL"
               }
             },
             {
@@ -1225,50 +1225,6 @@
       "language": "en-US",
       "results": [
         {
-          "ruleId": "8b1d70eb-2b69-3b1d-ab5c-a684e98e1bca",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Found Spring endpoint",
-            "id": "default",
-            "arguments": [
-              "org.owasp.webgoat.container.controller.StartLesson"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/main/java/org/owasp/webgoat/container/controller/StartLesson.java"
-                },
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 5,
-                  "endLine": 26,
-                  "endColumn": 50,
-                  "snippet": {
-                    "text": "var model = new ModelAndView(\"lesson_content\")"
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "lessonPage(HttpServletRequest)",
-                  "fullyQualifiedName": "org.owasp.webgoat.container.controller.StartLesson.lessonPage(HttpServletRequest)",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "975b778f0c046b21bab058d8c2580e86a9ac15ec40e1f8983c898a36dda3dd62",
-            "glog-pfp-ruleFileCode/v1": "c50296ca988b0b3c90955c7675273e23cb374fb434f78851ca39869210ddb915"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "c50296ca988b0b3c90955c7675273e23cb374fb434f78851ca39869210ddb915"
-          }
-        },
-        {
           "ruleId": "af8b23d0-6f36-354b-9db2-ddd4c1913e17",
           "kind": "fail",
           "level": "note",
@@ -1310,6 +1266,50 @@
           },
           "fingerprints": {
             "glog-fp-ruleFileCode/v1": "0efaa98782acedb5560520dbc1466553c85b50bd94728d214bf648998bc759a7"
+          }
+        },
+        {
+          "ruleId": "8b1d70eb-2b69-3b1d-ab5c-a684e98e1bca",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Found Spring endpoint",
+            "id": "default",
+            "arguments": [
+              "org.owasp.webgoat.container.controller.StartLesson"
+            ]
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/main/java/org/owasp/webgoat/container/controller/StartLesson.java"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 5,
+                  "endLine": 26,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "var model = new ModelAndView(\"lesson_content\")"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "lessonPage(HttpServletRequest)",
+                  "fullyQualifiedName": "org.owasp.webgoat.container.controller.StartLesson.lessonPage(HttpServletRequest)",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "975b778f0c046b21bab058d8c2580e86a9ac15ec40e1f8983c898a36dda3dd62",
+            "glog-pfp-ruleFileCode/v1": "c50296ca988b0b3c90955c7675273e23cb374fb434f78851ca39869210ddb915"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "c50296ca988b0b3c90955c7675273e23cb374fb434f78851ca39869210ddb915"
           }
         },
         {
@@ -3749,50 +3749,6 @@
           }
         },
         {
-          "ruleId": "ebcdce7f-a8f8-375a-abfd-617bc1983891",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Potential JDBC Injection",
-            "id": "default",
-            "arguments": [
-              "java/sql/Statement.executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;"
-            ]
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java"
-                },
-                "region": {
-                  "startLine": 94,
-                  "startColumn": 5,
-                  "endLine": 94,
-                  "endColumn": 53,
-                  "snippet": {
-                    "text": "ResultSet results = statement.executeQuery(query)"
-                  }
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "getSqlInt(Connection, String)",
-                  "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson9.getSqlInt(Connection, String)",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "0e5f600744b2718809958ed97bfe31874f36734c9a380977af728e007be8a7d9",
-            "glog-pfp-ruleFileCode/v1": "fba9aa73d712edc779de533d530518120fd87977a5f2dfd2b9656a57955d2b4c"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "fba9aa73d712edc779de533d530518120fd87977a5f2dfd2b9656a57955d2b4c"
-          }
-        },
-        {
           "ruleId": "ea4bd40b-158e-3bf4-b05e-933de90d8430",
           "kind": "fail",
           "level": "note",
@@ -3834,6 +3790,50 @@
           },
           "fingerprints": {
             "glog-fp-ruleFileCode/v1": "8d42f487db167ae0abf55932d3516b7e00afe59e38a4b33103646d7bd236045d"
+          }
+        },
+        {
+          "ruleId": "ebcdce7f-a8f8-375a-abfd-617bc1983891",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Potential JDBC Injection",
+            "id": "default",
+            "arguments": [
+              "java/sql/Statement.executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;"
+            ]
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 5,
+                  "endLine": 94,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "ResultSet results = statement.executeQuery(query)"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "getSqlInt(Connection, String)",
+                  "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson9.getSqlInt(Connection, String)",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "0e5f600744b2718809958ed97bfe31874f36734c9a380977af728e007be8a7d9",
+            "glog-pfp-ruleFileCode/v1": "fba9aa73d712edc779de533d530518120fd87977a5f2dfd2b9656a57955d2b4c"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "fba9aa73d712edc779de533d530518120fd87977a5f2dfd2b9656a57955d2b4c"
           }
         },
         {
