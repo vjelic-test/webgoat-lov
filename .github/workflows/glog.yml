@@ -2,6 +2,9 @@ name: Glog Scan
 on:
   workflow_dispatch:
 
+permissions:
+  security-events: write
+
 jobs:
   glog-scan:
     runs-on: ubuntu-latest
