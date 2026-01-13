@@ -37,6 +37,7 @@ jobs:
         with:
           client: 'test'
           upload: 'true'
+          debug: 'true'
           github-token: ${{ secrets.PAT_TOKEN }}
           glog-token: ${{ secrets.GLOG_TOKEN }}
     
