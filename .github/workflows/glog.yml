@@ -40,7 +40,6 @@ jobs:
           upload: 'true'
           debug: 'true'
           lang: 'java'
-          ignore: 'src/it/java/org/owasp/webgoat/integration'
           github-token: ${{ secrets.PAT_TOKEN }}
           glog-token: ${{ secrets.GLOG_TOKEN }}
     
