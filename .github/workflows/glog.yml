@@ -39,6 +39,7 @@ jobs:
           env: 'dev'
           upload: 'true'
           debug: 'true'
+          lang: 'java'
           github-token: ${{ secrets.PAT_TOKEN }}
           glog-token: ${{ secrets.GLOG_TOKEN }}
     
