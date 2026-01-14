@@ -1,4 +1,4 @@
-Jan 14, 2026 9:25:46 AM ai.glog.service.GlogService getFromGlog
+Jan 14, 2026 9:38:11 AM ai.glog.service.GlogService getFromGlog
 SEVERE: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
 {"sink":["Ensure this field has no more than 5000 characters."]}
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
@@ -19,7 +19,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_O
 	at com.google.gson.Gson.fromJson(Gson.java:991)
 	... 10 more
 
-Jan 14, 2026 9:25:46 AM ai.glog.service.GlogService getFromGlog
+Jan 14, 2026 9:38:11 AM ai.glog.service.GlogService getFromGlog
 SEVERE: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
 {"sink":["Ensure this field has no more than 5000 characters."]}
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
@@ -40,7 +40,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_O
 	at com.google.gson.Gson.fromJson(Gson.java:991)
 	... 10 more
 
-Jan 14, 2026 9:25:46 AM ai.glog.service.GlogService getFromGlog
+Jan 14, 2026 9:38:11 AM ai.glog.service.GlogService getFromGlog
 SEVERE: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
 {"sink":["Ensure this field has no more than 5000 characters."]}
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
@@ -61,7 +61,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_O
 	at com.google.gson.Gson.fromJson(Gson.java:991)
 	... 10 more
 
-Jan 14, 2026 9:25:47 AM ai.glog.service.GlogService getFromGlog
+Jan 14, 2026 9:38:12 AM ai.glog.service.GlogService getFromGlog
 SEVERE: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
 {"sink":["Ensure this field has no more than 5000 characters."]}
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
@@ -82,7 +82,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_O
 	at com.google.gson.Gson.fromJson(Gson.java:991)
 	... 10 more
 
-Jan 14, 2026 9:25:47 AM ai.glog.service.GlogService getFromGlog
+Jan 14, 2026 9:38:12 AM ai.glog.service.GlogService getFromGlog
 SEVERE: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
 {"sink":["Ensure this field has no more than 5000 characters."]}
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
@@ -103,7 +103,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_O
 	at com.google.gson.Gson.fromJson(Gson.java:991)
 	... 10 more
 
-Jan 14, 2026 9:26:27 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 9:38:22 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -134,7 +134,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:29 AM ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver getSinkCpg
+Jan 14, 2026 9:38:24 AM ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver getSinkCpg
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -155,7 +155,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:29 AM ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver getSinkCpg
+Jan 14, 2026 9:38:24 AM ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver getSinkCpg
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -176,7 +176,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:30 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 9:38:25 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -207,7 +207,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:32 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
+Jan 14, 2026 9:38:27 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -225,7 +225,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:39 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 9:38:35 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -260,7 +260,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:40 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 9:38:36 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -295,7 +295,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:40 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
+Jan 14, 2026 9:38:36 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -313,7 +313,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:40 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
+Jan 14, 2026 9:38:36 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -331,7 +331,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:40 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
+Jan 14, 2026 9:38:36 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -349,7 +349,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:40 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 9:38:36 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -384,7 +384,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 9:26:41 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 9:38:37 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
