@@ -1,4 +1,4 @@
-Jan 14, 2026 10:30:41 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 12:53:51 PM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -29,28 +29,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 10:30:43 AM ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver getSinkCpg
-SEVERE: next on empty iterator
-java.util.NoSuchElementException: next on empty iterator
-	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
-	at scala.collection.Iterator$$anon$19.next(Iterator.scala:971)
-	at scala.collection.Iterator$$anon$6.next(Iterator.scala:492)
-	at flatgraph.traversal.GenericSteps$.head$extension(Language.scala:80)
-	at ai.glog.cpg.analysis.SinkAnalyzer$.getSink(SinkAnalyzer.scala:22)
-	at ai.glog.cpg.analysis.SinkAnalyzer.getSink(SinkAnalyzer.scala)
-	at ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver.getSinkCpg(SqlInjectionResolver.java:178)
-	at ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver.remediation(SqlInjectionResolver.java:96)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver.isFalsePositive(SqlInjectionResolver.java:72)
-	at ai.glog.execute.workers.TriageAndRemediationCallableWorker.isFalsePositive(TriageAndRemediationCallableWorker.java:160)
-	at ai.glog.execute.workers.TriageAndRemediationCallableWorker.call(TriageAndRemediationCallableWorker.java:67)
-	at ai.glog.execute.workers.TriageAndRemediationCallableWorker.call(TriageAndRemediationCallableWorker.java:32)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-
-Jan 14, 2026 10:30:43 AM ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver getSinkCpg
+Jan 14, 2026 12:53:53 PM ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver getSinkCpg
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -71,7 +50,28 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 10:30:43 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 12:53:53 PM ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver getSinkCpg
+SEVERE: next on empty iterator
+java.util.NoSuchElementException: next on empty iterator
+	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
+	at scala.collection.Iterator$$anon$19.next(Iterator.scala:971)
+	at scala.collection.Iterator$$anon$6.next(Iterator.scala:492)
+	at flatgraph.traversal.GenericSteps$.head$extension(Language.scala:80)
+	at ai.glog.cpg.analysis.SinkAnalyzer$.getSink(SinkAnalyzer.scala:22)
+	at ai.glog.cpg.analysis.SinkAnalyzer.getSink(SinkAnalyzer.scala)
+	at ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver.getSinkCpg(SqlInjectionResolver.java:178)
+	at ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver.remediation(SqlInjectionResolver.java:96)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at ai.glog.plugins.spotbugs.bug.resolve.SqlInjectionResolver.isFalsePositive(SqlInjectionResolver.java:72)
+	at ai.glog.execute.workers.TriageAndRemediationCallableWorker.isFalsePositive(TriageAndRemediationCallableWorker.java:160)
+	at ai.glog.execute.workers.TriageAndRemediationCallableWorker.call(TriageAndRemediationCallableWorker.java:67)
+	at ai.glog.execute.workers.TriageAndRemediationCallableWorker.call(TriageAndRemediationCallableWorker.java:32)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+Jan 14, 2026 12:53:54 PM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -102,7 +102,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 10:30:45 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
+Jan 14, 2026 12:53:56 PM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -120,7 +120,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 10:30:53 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 12:54:04 PM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -155,7 +155,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 10:30:53 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 12:54:04 PM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -190,7 +190,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 10:31:03 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
+Jan 14, 2026 12:54:04 PM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -208,7 +208,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 10:31:03 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
+Jan 14, 2026 12:54:04 PM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -226,7 +226,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 10:31:03 AM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
+Jan 14, 2026 12:54:04 PM ai.glog.plugins.spotbugs.bug.resolve.PathTraversalInResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -244,7 +244,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 10:31:07 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 12:54:04 PM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -279,7 +279,7 @@ java.util.NoSuchElementException: next on empty iterator
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 
-Jan 14, 2026 10:31:18 AM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
+Jan 14, 2026 12:54:05 PM ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver getDetailText
 SEVERE: next on empty iterator
 java.util.NoSuchElementException: next on empty iterator
 	at scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
@@ -305,18 +305,6 @@ java.util.NoSuchElementException: next on empty iterator
 	at ai.glog.plugins.spotbugs.bug.resolve.SpringMvcEndpointResolver.getDetailText(SpringMvcEndpointResolver.java:182)
 	at ai.glog.execute.workers.TriageAndRemediationCallableWorker.call(TriageAndRemediationCallableWorker.java:70)
 	at ai.glog.execute.workers.TriageAndRemediationCallableWorker.call(TriageAndRemediationCallableWorker.java:32)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1623)
-
-Jan 14, 2026 10:40:52 AM ai.glog.execute.workers.FileCallableWorker call
-SEVERE: null
-java.lang.InterruptedException
-	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1765)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475)
-	at ai.glog.execute.workers.FileCallableWorker.call(FileCallableWorker.java:62)
-	at ai.glog.execute.workers.FileCallableWorker.call(FileCallableWorker.java:18)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
