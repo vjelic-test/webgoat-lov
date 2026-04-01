@@ -37,10 +37,9 @@ jobs:
         with:
           client: 'test'
           env: 'dev'
-          lang: 'java,oss'
           upload: 'true'
           debug: 'true'
-          lang: 'java'
+          lang: 'java,oss'
           github-token: ${{ secrets.PAT_TOKEN }}
           glog-token: ${{ secrets.GLOG_TOKEN }}
     
