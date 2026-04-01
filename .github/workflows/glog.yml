@@ -37,6 +37,7 @@ jobs:
         with:
           client: 'test'
           env: 'dev'
+          lang: 'java,oss'
           upload: 'true'
           debug: 'true'
           lang: 'java'
